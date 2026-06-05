@@ -29,6 +29,7 @@ export class AuthService {
     };
 
     this.users.push(newUser);
+    // console.log('CURRENT IN-MEMORY DATABASE STATE:', this.users);
     const { passwordHash, ...result } = newUser;
     return result;
   }
